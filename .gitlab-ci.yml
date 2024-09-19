@@ -1,0 +1,49 @@
+variables:
+  GIT_CLONE_PATH: $CI_BUILDS_DIR/wiki.gitlab.io
+  
+stages:
+  - mybuild
+  - mydeploy
+  - mytest
+
+before_script:
+  - pwd
+  - npm ci
+
+build_job:
+  stage: mybuild
+  script:
+    - echo "build"
+    # - mkdir .public
+    # - Get-ChildItem -Path . -Recurse -Exclude public, .public, *.yml, *.json | Copy-Item -Destination .\.public -Force
+    # - rm ./public -Recurse
+    # - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+  tags:
+    - wiki
+
+deploy_job:
+  stage: mydeploy
+  script:
+    - echo "deploy"
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+  tags:
+    - wiki
+
+test_job:
+  stage: mytest
+  script:
+    - echo "test"
+    # - Copy-Item -Path "C:\GitLab-Runner\builds\wiki.gitlab.io\public\*" -Destination "C:\TEST_WIKI\public" -Recurse
+  tags:
+    - wiki
+  dependencies:
+    - build_job

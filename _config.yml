@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url:                   https://nomoreFt.github.io
+url:                   http://git2.ecount.kr/ecount-team/fe/efa/wiki.gitlab.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -21,15 +21,15 @@ lang:                   ko-KR, en-US
 
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 nomoreFt
+title:                 EFA Team
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  nomoreFt's Dev Blog
+  EFA 팀 작업공간
 
 # A shorter description for the sidebar.
-tagline:               nomoreFt's Dev Blog
+tagline:               EFA 팀 작업공간
 
 # A list of keywords for your blog
 keywords:              [java,kotlin,spring]
@@ -37,18 +37,20 @@ keywords:              [java,kotlin,spring]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo4.png
+logo:                  /assets/img/EFA128.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                Hyunwoo Kim
-  email:               hyunwoo.kim1108@gmail.com
+  name:                EFA ECOUNT
+  email:               askmail@ecounterp.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
+  - title:             Dev.Team
+    url:               /devteam/
   - title:             DevLog
     url:               /devlog/
     submenu:
@@ -65,11 +67,11 @@ menu:
         url: /jpa/
       - title: Algorithm
         url: /algorithm/
-  - title:             Archive Blog
-    url:               https://nomoreft.tistory.com/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About Me
+  # - title:             Archive Blog
+  #   url:               https://nomoreft.tistory.com/
+  # - title:             Documentation
+  #   url:               /docs/
+  - title:             About
     url:               /about/
 
 # Add links to the footer.
@@ -83,7 +85,7 @@ legal:
 #    url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2023. nomoreFt All rights reserved.
+copyright:             © 2023. EFA All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -105,7 +107,7 @@ remote_theme: hydecorp/hydejack@v9
  
 # Sidebar image and theme color of the site.
 accent_image:
-  background: center / cover url(/assets/img/sidebar-bg.gif)
+  background: center / cover url(/assets/img/ecount_bg.png)
   overlay: false
 accent_color:          rgb(79,177,186)
 
