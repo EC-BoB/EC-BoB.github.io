@@ -1,20 +1,33 @@
-# Hydejack Starter Kit
+# nomoreFt's Blog
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+## 소개
+이 블로그는 더 좋은 개발자가 되기 위한 저의 노력과 발악이 쓰여집니다.
 
-## Quick Start
-### Running locally
-1. Clone repository (git users), or [download] and unzip.
-2. Open terminal, `cd` into root directory (where `_config.yml` is located)
-3. Run `bundle install` [^1]
-4. Run `bundle exec jekyll serve`
-5. Open <http://localhost:4000/hydejack-starter-kit/>
+## 저자
+- 이름: 홍길동
+- 관심사: 클린 코드, 자바, 코틀린
 
-## What's next?
-* Open files and read the comments
-* Read the [docs](https://hydejack.com/docs/)
-* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
+## 설치 및 실행
 
-[^1]: Requires Bundler. Install with `gem install bundler`.
+### 필요한 패키지 설치
+~~~bash
+$ bundle install
+~~~
+### 로컬에서 실행
+~~~bash
+$ bundle exec jekyll serve
+~~~
 
-[download]: https://github.com/hydecorp/hydejack-starter-kit/archive/master.zip
+## 기술 스택
+* Jekyll
+* Markdown
+* HTML/CSS
+
+## 글 작성 방법
+_posts 디렉토리에 새로운 .md 파일을 생성합니다.<br>
+Jekyll의 포스트 작성 규칙에 따라 내용을 작성합니다.<br>
+git push로 블로그를 업데이트합니다.<br>
+
+## 연락처
+이메일: hyunwoo.kim1108@gmail.com<br>
+Github: github.com/nomoreFt
