@@ -1,9 +1,10 @@
 ---
 layout: list
 title: Dev.Team
-slug: weekly
+slug: devteam
 description: >
-  주간일정
+  팀 스페이스
 sitemap: false
-order: 1
+#no_groups: true
+order: 2
 ---

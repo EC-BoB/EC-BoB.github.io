@@ -5,5 +5,5 @@ slug: blog
 description: >
   이 블로그 개발기
 sitemap: false
-order: 4
+order: 1
 ---

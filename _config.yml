@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url:                   http://git2.ecount.kr/ecount-team/fe/efa/wiki.gitlab.io
+url:                   https://github.com/EC-BoB/EC-BoB.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -49,22 +49,20 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Dev.Team
-    url:               /devteam/
   - title:             DevLog
     url:               /devlog/
     submenu:
       - title: Blog Dev
         url: /blog/
-  - title:             Study
-    url:               /study/
+  - title:             Dev.Team
+    url:               /devteam/
     submenu:
+      - title: Weekly
+        url: /weekly/
       - title: Clean-Architecture
         url: /clean-architecture/
       - title: Object
         url: /object/
-      - title: Jpa
-        url: /jpa/
       - title: Algorithm
         url: /algorithm/
   # - title:             Archive Blog
@@ -98,7 +96,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-#theme: jekyll-theme-hydejack
+# theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 
