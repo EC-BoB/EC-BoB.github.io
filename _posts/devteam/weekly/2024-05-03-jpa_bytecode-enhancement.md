@@ -4,7 +4,7 @@ title: "5/3 부록 - 하이버네이트 Bytecode Enhancement"
 description: >
   하이버네이트 Bytecode Enhancement에 대해 알아보자.
 image: /assets/img/devteam/jpa.jpg
-categories: [ devteam,weekly ]
+categories: [devteam]
 related_posts:
 
 ---

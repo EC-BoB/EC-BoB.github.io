@@ -4,7 +4,7 @@ title: "4/18 [부록 2] 연관관계 효율성[작성중]"
 description: >
     JPA의 기본 사항을 정리한다.
 image: /assets/img/devteam/jpa.jpg
-categories: [devteam,weekly]
+categories: [devteam]
 related_posts:
   
 ---

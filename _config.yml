@@ -57,7 +57,7 @@ menu:
   - title:             Dev.Team
     url:               /devteam/
     submenu:
-      - title: Weekly
+      - title: 주간일정
         url: /weekly/
       - title: Clean-Architecture
         url: /clean-architecture/
@@ -65,6 +65,11 @@ menu:
         url: /object/
       - title: Algorithm
         url: /algorithm/
+  - title:             Tags
+    url:               /tag-weekly/
+    submenu:
+      - title: 주간일정태그
+        url: /tag-weekly/
   # - title:             Archive Blog
   #   url:               https://nomoreft.tistory.com/
   # - title:             Documentation
