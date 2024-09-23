@@ -70,6 +70,14 @@ menu:
     submenu:
       - title: 주간일정태그
         url: /tag-weekly/
+      - title: EFA 주간일정
+        url: /tag-weekly-efa/
+      - title: EFE1 주간일정
+        url: /tag-weekly-efe1/
+      - title: EFE2 주간일정
+        url: /tag-weekly-efe2/
+      - title: EFE3 주간일정
+        url: /tag-weekly-efe3/
   # - title:             Archive Blog
   #   url:               https://nomoreft.tistory.com/
   # - title:             Documentation
