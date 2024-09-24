@@ -11,14 +11,89 @@
   {%- for tag_slug in tags -%}
     {%- capture iter_separator -%}{% if forloop.last %}{{ end_with }}{% else %}{{ separator }}{% endif %}{%- endcapture -%}
 
-    {%- if major >= 4 and minor >= 1 %}
+    {%- if major >= 4 and minor >= 1 %} 
       {%- assign tag = meta | find: "slug", tag_slug -%}
     {%- else -%}
       {%- assign tag = meta | where: "slug", tag_slug | first -%}
     {%- endif -%}
 
     {%- if tag -%}
-      {%- capture content_temp -%}{{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title">{{ tag.title }}</a>{{ iter_separator }}{%- endcapture -%}
+      {%- assign background_color = 'rgb(233, 233, 233)' -%}
+      {%- assign color = 'black' -%}
+      {%- case tag.title -%}
+        {%- when 'ESD' -%}
+          {%- assign background_color = 'rgb(0, 35, 129)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'EAD' -%}
+          {%- assign background_color = 'rgb(224, 153, 152)' -%}
+        {%- when 'EID' -%}
+          {%- assign background_color = 'rgb(234, 93, 0)' -%}
+        {%- when 'EBS' -%}
+          {%- assign background_color = 'rgb(244, 214, 121)' -%}
+        {%- when 'DMO' -%}
+          {%- assign background_color = 'rgb(150, 58, 100)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'EMS' -%}
+          {%- assign background_color = 'rgb(140, 233, 140)' -%}
+        {%- when 'EDC' -%}
+          {%- assign background_color = 'rgb(23, 73, 45)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'EDI' -%}
+          {%- assign background_color = 'rgb(88, 108, 112)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'EFS' -%}
+          {%- assign background_color = 'rgb(247, 247, 247)' -%}
+        {%- when 'EFA' -%}
+          {%- assign background_color = 'rgb(234, 161, 0)' -%}
+        {%- when 'TFT1' -%}
+          {%- assign background_color = 'rgb(202, 54, 38)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'ETX' -%}
+          {%- assign background_color = 'rgb(255, 174, 201)' -%}
+        {%- when 'EFE1' -%}
+          {%- assign background_color = 'rgb(51, 181, 121)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'DA' -%}
+          {%- assign background_color = 'rgb(179, 229, 252)' -%}
+        {%- when 'SA' -%}
+          {%- assign background_color = 'rgb(249, 203, 156)' -%}
+        {%- when 'QC' -%}
+          {%- assign background_color = 'rgb(78, 24, 153)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'QT' -%}
+          {%- assign background_color = 'rgb(187, 187, 187)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'TFT3' -%}
+          {%- assign background_color = 'rgb(237, 185, 15)' -%}
+        {%- when 'QA' -%}
+          {%- assign background_color = 'rgb(255, 217, 102)' -%}
+        {%- when 'DBA' -%}
+          {%- assign background_color = 'rgb(153, 0, 255)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'EFE3' -%}
+          {%- assign background_color = 'rgb(243, 92, 78)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'EFE2' -%}
+          {%- assign background_color = 'rgb(114, 122, 140)' -%}
+          {%- assign color = 'white' -%}
+        {%- when 'FD' -%}
+          {%- assign background_color = 'rgb(255, 192, 223)' -%}
+        {%- when 'FE' -%}
+          {%- assign background_color = 'rgb(130, 99, 88)' -%}
+        {%- when '설정' -%}
+          {%- assign background_color = 'rgb(196, 146, 172)' -%}
+          {%- assign color = 'white' -%}
+        {%- when '업무' -%}
+          {%- assign background_color = 'rgb(129, 212, 250)' -%}
+          {%- assign color = 'white' -%}
+        {%- else -%}
+          {%- assign background_color = 'rgb(233, 233, 233)' -%}
+          {%- assign color = 'black' -%}
+      {%- endcase -%}
+
+      {%- capture content_temp -%}
+        {{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title" style="background-color: {{ background_color }}; color: {{ color }};">{{ tag.title }}</a>{{ iter_separator }}
+      {%- endcapture -%}
     {%- else -%}
       {%- capture content_temp -%}{{ content }}<span>{{ tag_slug | capitalize }}</span>{{ iter_separator }}{%- endcapture -%}
     {%- endif -%}
