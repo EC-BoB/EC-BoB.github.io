@@ -55,10 +55,10 @@ menu:
       - title: Blog Dev
         url: /blog/
   - title:             Dev.Team
-    url:               /devteam/
+    url:               /devteam/2000-01-01-devteam-main/
     submenu:
       - title: 주간일정
-        url: /weekly/
+        url: /devteam/weekly/2000-01-01-weekly-main/
       - title: Clean-Architecture
         url: /clean-architecture/
       - title: Object
