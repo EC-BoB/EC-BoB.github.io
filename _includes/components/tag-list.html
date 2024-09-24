@@ -95,7 +95,6 @@
 
       {%- capture content_temp -%}
         {{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title" style="background-color: {{ background_color }}; color: {{ color }}; border-radius: 10px; text-decoration: none; margin-right: 4px;">&nbsp;&nbsp;{{ tag.title }}&nbsp;&nbsp;</a>{{ iter_separator }}
-        {% unless no_br %}<br/>
       {%- endcapture -%}
     {%- else -%}
       {%- capture content_temp -%}{{ content }}<span>{{ tag_slug | capitalize }}</span>{{ iter_separator }}{%- endcapture -%}
