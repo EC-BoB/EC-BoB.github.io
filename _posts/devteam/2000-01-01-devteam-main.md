@@ -1,10 +1,11 @@
 ---
 layout: post
-title: 'Weekly'
+title: 'Dev.Team'
 description: >
   주간일정
 image: 
 categories: [devteam]
+tags: [fe, efa, efe1, efe2, efe3, 업무, ead, eid, 설정, edc, ems, efs]
 related_posts: []
 ---
 ---

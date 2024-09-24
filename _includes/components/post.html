@@ -18,9 +18,9 @@
         {%- assign tag_separator      = site.data.strings.tag_separator      | default:"　"  -%}
         {%- include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator -%}
       {% endcapture %}
-      <span class="ellipsis mr1">
+      <div class="ellipsis mr1">
         {{ foobar }}
-      </span>
+      </div>
       {% unless site.hydejack.hide_dates or site.hydejack.hide_last_modified or post.hide_last_modified %}
         {% if post.last_modified_at %}
           {% assign d1 = post.date             | date:"%Y-%m-%d" %}
