@@ -65,6 +65,11 @@ menu:
         url: /object/
       - title: Algorithm
         url: /algorithm/
+  - title:             Dev.Progress
+    url:               /devprogress/
+    submenu:
+      - title: Job
+        url: /job/
   - title:             Tags
     url:               /tag-weekly/
     submenu:
