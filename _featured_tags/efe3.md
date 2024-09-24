@@ -1,9 +1,8 @@
 ---
 layout: list
-title: job
-slug: job
+title: EFE3
+slug: efe3
 description: >
-  Job 목록
+  EFE3 Team
 sitemap: false
-order: 2
 ---

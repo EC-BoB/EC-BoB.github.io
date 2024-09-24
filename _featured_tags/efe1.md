@@ -1,8 +1,8 @@
 ---
 layout: list
-title: Weekly
-slug: weekly
+title: EFE1
+slug: efe1
 description: >
-  Weekly Team Log
+  EFE1 Team
 sitemap: false
 ---

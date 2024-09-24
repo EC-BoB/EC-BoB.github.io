@@ -3,9 +3,9 @@ layout: post
 title: '9/20 EFA 주간일정'
 description: >
   9/20 EFA 주간일정입니다.
-image: /assets/img/devteam/2024-09-20-weekly_grid_full_width_min.png
+image: 
 categories: [devteam, weekly]
-tags: [weekly, weekly-efa]
+tags: [efa, weekly-efa]
 related_posts:
 ---
 

@@ -5,7 +5,7 @@ description: >
   9/13 EFA 주간일정입니다.
 image: 
 categories: [devteam, weekly]
-tags: [weekly, weekly-efa]
+tags: [efa, weekly-efa]
 related_posts:
 ---
 ---

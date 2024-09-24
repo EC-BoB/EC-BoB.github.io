@@ -1,9 +1,8 @@
 ---
 layout: list
-title: job
-slug: job
+title: EFA
+slug: efa
 description: >
-  Job 목록
+  EFA Team
 sitemap: false
-order: 2
 ---

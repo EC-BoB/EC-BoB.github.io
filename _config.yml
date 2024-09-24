@@ -65,28 +65,22 @@ menu:
         url: /object/
       - title: Algorithm
         url: /algorithm/
+  - title:             주간일정
+    url:               /weekly/
+    submenu:
+      - title: EFA
+        url: /tag-weekly-efa/
+      - title: EFE1
+        url: /tag-weekly-efe1/
+      - title: EFE2
+        url: /tag-weekly-efe2/
+      - title: EFE3
+        url: /tag-weekly-efe3/
   - title:             Dev.Progress
     url:               /devprogress/
     submenu:
       - title: Job
         url: /job/
-  - title:             Tags
-    url:               /tag-weekly/
-    submenu:
-      - title: 주간일정태그
-        url: /tag-weekly/
-      - title: EFA 주간일정
-        url: /tag-weekly-efa/
-      - title: EFE1 주간일정
-        url: /tag-weekly-efe1/
-      - title: EFE2 주간일정
-        url: /tag-weekly-efe2/
-      - title: EFE3 주간일정
-        url: /tag-weekly-efe3/
-  # - title:             Archive Blog
-  #   url:               https://nomoreft.tistory.com/
-  # - title:             Documentation
-  #   url:               /docs/
   - title:             About
     url:               /about/
 
