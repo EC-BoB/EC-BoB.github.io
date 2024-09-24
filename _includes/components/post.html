@@ -15,7 +15,7 @@
     <div class="post-date">
       {% capture foobar %}
         {%- assign tag_start          = site.data.strings.tag_start          | default:"" -%}
-        {%- assign tag_separator      = site.data.strings.tag_separator      | default:", "  -%}
+        {%- assign tag_separator      = site.data.strings.tag_separator      | default:"　"  -%}
         {%- include components/tag-list.html tags=post.tags meta=site.featured_tags start_with=tag_start separator=tag_separator -%}
       {% endcapture %}
       <span class="ellipsis mr1">
