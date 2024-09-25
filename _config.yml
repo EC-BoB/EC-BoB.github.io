@@ -55,27 +55,10 @@ menu:
       - title: Blog Dev
         url: /blog/
   - title:             Dev.Team
-    url:               /devteam/2000-01-01-devteam-main/
+    url:               /devteam/
     submenu:
       - title: 주간일정
-        url: /devteam/weekly/2000-01-01-weekly-main/
-      - title: Clean-Architecture
-        url: /clean-architecture/
-      - title: Object
-        url: /object/
-      - title: Algorithm
-        url: /algorithm/
-  - title:             주간일정
-    url:               /weekly/
-    submenu:
-      - title: EFA
-        url: /tag-weekly-efa/
-      - title: EFE1
-        url: /tag-weekly-efe1/
-      - title: EFE2
-        url: /tag-weekly-efe2/
-      - title: EFE3
-        url: /tag-weekly-efe3/
+        url:           /weekly/
   - title:             Dev.Progress
     url:               /devprogress/
     submenu:
