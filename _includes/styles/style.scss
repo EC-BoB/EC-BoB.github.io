@@ -55,7 +55,9 @@
   {% endunless %}
 
   @import "my-style";
+  @import "pooleparty/_posts.pre.scss";
   @import "hydejack/_menu.pre.scss";
+  
 {% else %}
   @import "html";
 
