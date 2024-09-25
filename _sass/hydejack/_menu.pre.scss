@@ -49,14 +49,14 @@ $navbar-height: 5rem;
     // <<< link
     $shadow-padding: 3rem;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       width: calc(100% - #{$shadow-padding * 2});
       height: $navbar-height;
       left: $shadow-padding;
       margin: auto;
-      box-shadow: 0 0 2rem rgba(0,0,0,0.25);
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
       z-index: -1;
     }
     // >>>
@@ -91,8 +91,10 @@ $navbar-height: 5rem;
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: space-between; /* 공간을 균등하게 분배 */
 
-  > :first-child, > :last-child {
+  > :first-child,
+  > :last-child {
     border: none;
   }
 }
@@ -115,9 +117,11 @@ $navbar-height: 5rem;
 // >>>
 
 // <<< link
-a.nav-btn, button.nav-btn {
+a.nav-btn,
+button.nav-btn {
   cursor: pointer;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   }
 }
@@ -137,7 +141,82 @@ a.nav-btn, button.nav-btn {
 }
 
 .navbar {
-  .loading { display: none; }
-  @media print { display: none; }
+  .loading {
+    display: none;
+  }
+  @media print {
+    display: none;
+  }
 }
 // >>>
+
+.navbar-links {
+  display: flex; /* 수평 배치 유지 */
+  margin-left: auto; /* 오른쪽으로 밀어버리기 */
+  list-style: none; /* 불릿 제거 */
+  padding: 0;
+  margin: 0;
+
+  .navbar-item:first-child {
+    margin-left: 20px; /* 첫 번째 아이템에 margin-left 추가 */
+  }
+}
+
+.navbar-links a {
+  text-decoration: none; /* 기본적으로 밑줄 제거 */
+  position: relative; /* 위치 조정을 위한 설정 */
+  color: #333; /* 글자 색상 */
+
+  &:hover {
+    color: #000; /* hover 시 색상 변경 */
+  }
+
+  &::after {
+    content: ''; /* 가상 요소 생성 */
+    display: block;
+    height: 2px; /* 밑줄 두께 */
+    background: var(--accent-color); /* 밑줄 색상 */
+    width: 100%; /* 너비를 100%로 설정 */
+    position: absolute; /* 위치 조정 */
+    left: 0;
+    bottom: -5px; /* 링크 아래에 위치 */
+    transform: scaleX(0); /* 초기 상태에서 보이지 않도록 설정 */
+    transition: transform 0.3s ease; /* 애니메이션 효과 */
+  }
+
+  &:hover::after {
+    transform: scaleX(1); /* hover 시 밑줄 나타남 */
+  }
+}
+
+.navbar-item {
+  position: relative; /* 서브메뉴의 위치를 제어하기 위해 */
+  margin-right: 20px; /* 간격 조정 */
+  /* 추가적인 스타일 조정 가능 */
+}
+
+.submenu {
+  display: none; /* 기본적으로 숨김 */
+  position: absolute; /* 부모에 대해 절대 위치 */
+  top: 110%; /* 부모 바로 아래에 위치 (조정된 값) */
+  left: 0;
+  background-color: rgba(79, 177, 186, 0.1); /* 배경 색상 변경 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+  width: auto; /* 너비를 자동으로 설정 */
+  list-style: none; /* 점 제거 */
+  min-width: 150px; /* 최소 너비 설정 */
+}
+
+.navbar-item:hover .submenu {
+  display: block; /* 호버 시 서브메뉴 표시 */
+}
+
+.submenu-item {
+  padding: 10px; /* 패딩 조정 */
+}
+
+.submenu-item a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #333; /* 글자 색상 */
+}

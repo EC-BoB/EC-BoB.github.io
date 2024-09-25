@@ -83,6 +83,40 @@ import { setupFLIP } from './flip';
     return el?.getAttribute?.('data-flip');
   }
 
+  // 서브메뉴 스타일 설정
+  function setupSubmenuStyles() {
+    const styles = `
+      .submenu {
+        display: none; /* 기본적으로 숨김 */
+        position: absolute; /* 부모에 대해 절대 위치 */
+        background-color: white; /* 배경 색상 */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+        z-index: 1000; /* 다른 요소 위에 표시 */
+      }
+
+      .navbar-item:hover .submenu {
+        display: block; /* 호버 시 서브메뉴 표시 */
+      }
+
+      .submenu-item {
+        padding: 10px; /* 패딩 조정 */
+      }
+
+      .submenu-item a {
+        text-decoration: none; /* 밑줄 제거 */
+        color: #333; /* 글자 색상 */
+      }
+    `;
+
+    const styleSheet = document.createElement("style");
+    styleSheet.type = "text/css";
+    styleSheet.innerText = styles;
+    document.head.appendChild(styleSheet);
+  }
+
+  // 여기서 서브메뉴 스타일 설정을 호출합니다
+  setupSubmenuStyles();
+
   const pushStateEl = document.querySelector('hy-push-state');
   if (!pushStateEl) return;
 
