@@ -55,6 +55,7 @@
   {% endunless %}
 
   @import "my-style";
+  @import "hydejack/_menu.pre.scss";
 {% else %}
   @import "html";
 
