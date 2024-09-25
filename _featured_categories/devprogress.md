@@ -7,4 +7,5 @@ description: >
 sitemap: false
 #no_groups: true
 order: 2
+tags: [ECCode, ECDecimal, ECEnum]
 ---

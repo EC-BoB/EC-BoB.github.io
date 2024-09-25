@@ -1,6 +1,6 @@
 ---
 layout: list
-title: job
+title: Job 목록
 slug: job
 description: >
   Job 목록
